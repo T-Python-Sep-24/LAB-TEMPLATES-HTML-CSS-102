@@ -157,10 +157,24 @@ body {
     display: block;
 }
 
-/* Footer Navigation */
+
+/* Saudi Arabia Footer Section */
+.footer-navbar {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align "Saudi Arabia" to the left */
+    border-bottom: 1px solid #dadce0; /* Optional separator */
+    position: fixed;
+    bottom: 40px; /* Adjust position to sit above the main footer */
+}
+
+/* Main Footer Navigation */
 .footer-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Align left and right sections */
     align-items: center;
     width: 100%;
     padding: 15px 20px;
@@ -170,19 +184,20 @@ body {
     left: 0;
 }
 
-/* Align footer items horizontally */
+/* Left and Right Sections for Main Footer */
 .footer-left, .footer-right {
     display: flex;
     gap: 15px;
 }
 
-/* Footer links */
-.footer-nav a {
+/* Footer Links */
+.footer-nav a, .footer-navbar a {
     text-decoration: none;
     color: #5f6368;
     font-size: 14px;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover, .footer-navbar a:hover {
     text-decoration: underline;
 }
+
