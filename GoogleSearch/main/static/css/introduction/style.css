@@ -1,0 +1,203 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Ensure the body takes full height */
+html, body {
+    height: 100%;
+    background-color: #fff;
+}
+
+/* Page Layout: Flexbox for the full page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Navbar at top, footer at bottom */
+}
+
+/* Container for main content */
+.container {
+    flex: 1; /* Fills available space between navbar and footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    display: flex;
+    justify-content: flex-end; /* Align everything to the right */
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Navigation Links and Icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Material Icon Styling */
+.material-icons {
+    font-size: 24px;
+    color: #5f6368;
+    cursor: pointer;
+}
+
+/* Sign In Button Styling */
+.sign-in-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Main Content (Google Container) */
+.google-container {
+    margin: 40px auto;
+}
+
+.google-logo {
+    width: 272px;
+    margin-bottom: 30px;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar-container {
+    position: relative;
+    width: 582px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+}
+
+.icon-container {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.google-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.google-btn:hover {
+    background-color: #f1f3f4;
+}
+
+/* Terms Container */
+.terms-container {
+    max-width: 800px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.terms-illustration {
+    width: 100%; /* Responsive image */
+    max-width: 600px;
+    margin: 0 auto 40px;
+    display: block;
+}
+
+
+/* Saudi Arabia Footer Section */
+.footer-navbar {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align "Saudi Arabia" to the left */
+    border-bottom: 1px solid #dadce0; /* Optional separator */
+    position: fixed;
+    bottom: 40px; /* Adjust position to sit above the main footer */
+}
+
+/* Main Footer Navigation */
+.footer-nav {
+    display: flex;
+    justify-content: space-between; /* Align left and right sections */
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Left and Right Sections for Main Footer */
+.footer-left, .footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+/* Footer Links */
+.footer-nav a, .footer-navbar a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.footer-nav a:hover, .footer-navbar a:hover {
+    text-decoration: underline;
+}
+

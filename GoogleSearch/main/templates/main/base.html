@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Google Clone{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!-- Custom Styles -->
+      <link rel="stylesheet" href="{% static 'css/introduction/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <nav class="top-nav">
+            <div class="nav-icons">
+                <a href="https://support.google.com/mail/answer/56256?hl=en" class="nav-item">Gmail</a>
+                <a href="#" class="nav-item">Images</a>
+                <span class="material-icons">apps</span>
+                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1812573153%3A1655944654029516&flowEntry=ServiceLogin&flowName=WebLiteSignIn&ifkv=AX3vH39E0iYVTmn-NoMNM_C35EPrno8LWsRx2Qhr0HApkVLZ-Zc_Vql8ouaSQOiXzEmthrpOPAV5">
+                    <button class="sign-in-button">Sign in</button>
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+<!-- Saudi Arabia Footer Section -->
+<footer class="footer-navbar">
+    <div class="footer-leftside">
+        <a href="#">Saudi Arabia</a>
+    </div>
+</footer>
+
+<!-- Main Footer Section -->
+<footer class="footer-nav">
+    <div class="footer-left">
+        <a href="#">About</a>
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search works</a>
+    </div>
+    <div class="footer-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
