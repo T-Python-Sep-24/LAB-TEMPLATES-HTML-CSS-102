@@ -14,7 +14,7 @@
 ### Use google icons for other icons that are not in the resources (choose similar icons)
 
 #### Home page: 
-<img width="1786" alt="Screenshot 2024-02-28 at 10 09 43 AM" src="https://raw.githubusercontent.com/T-Python-Sep-24/LAB-TEMPLATES-HTML-CSS-102/main/308456983-e9ceecc8-7cc1-4536-9a7b-ecf95c964609.png">
+<img width="1786" alt="Screenshot 2024-02-28 at 10 09 43 AM" src="https://github.com/T-Python-Sep-24/LAB-TEMPLATES-HTML-CSS-102/blob/main/308456983-e9ceecc8-7cc1-4536-9a7b-ecf95c964609.png?raw=true">
 
 ..................................
 
