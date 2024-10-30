@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+/* Navigator Styles  in (base.html) file */
+.wrapper {
+    padding: 1rem;
+
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    justify-content: right;
+    align-items: center;
+    font-size: 15px;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+.material-symbols-outlined:hover{
+    background-color: grey;
+    border-radius: 50%;
+    opacity: 1;
+}
+.btn {
+
+    padding: 0.6rem 2rem;
+    background-color: #0b57d0;
+    color: white;
+    border-radius: 6px;
+    border: none;
+
+}
+.btn:hover{
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px grey;
+}
+/* main content styles */
+.logo{
+    display:flex;
+    justify-content: center;
+    padding-top: 3rem;
+
+}
+.logo img {
+    width: 18%;
+}
+.search-space {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid rgba(1,1,1,0.1);
+    border-radius: 50px;
+    text-align: center;
+    margin: 1.5rem 30rem;
+}
+.search-space img{
+    width: 28px;
+    margin: 10px;
+}
+#searchTextbox {
+    width: 85%;
+    border: none;
+
+}
+.search-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+}
+
+.light {
+    background-color: #f7f8f9;
+    color:black;
+    margin: 0.4rem 0.4rem;
+}
+.translate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+.translate h4 {
+    font-weight: 100;
+    margin: 0 0.4rem;
+}
+/* footer styles  in the (base.html) */
+footer {
+    border-bottom: 1px solid #d2d2d2;
+    color: black;
+    justify-content: center;
+
+    /*
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+    */
+}
+
+.location {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 1rem 1rem;
+
+}
+.location h4{
+    font-weight: normal;
+}
+.bottom-nav-bar {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+
+}
+.bottom-nav-bar a {
+    text-decoration: none;
+    color: black;
+
+}
+.left-bottom-nav-bar a {
+    padding: 0 1rem;
+}
+.right-bottom-nav-bar a {
+    padding: 0 1rem;
+}
+
+/* Terms page styless */
+.terms-logo{
+    display:flex;
+    justify-content: center;
+
+}
+.terms-logo img {
+    width: 60%;
+}
+.terms-content {
+    padding-left: 18rem;
+}
+.terms-content > * {
+    margin: 1rem;
+}
+
+a:hover{
+    text-decoration: underline;
+}
