@@ -27,4 +27,4 @@
 - https://fonts.google.com/icons
 
 ## Bonus:
-- Make another page `search/results/` that when clicking the button search on the home page will get the user to the results of search page (note: only demo data for now)
+- t when clicking the button search on the home page will submit the search to google.com , ie. will display google search result page with the search term filled .
