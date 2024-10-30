@@ -1,0 +1,26 @@
+{%extends 'main/base.html'%}
+
+{%block title%} Google {%endblock%}
+{%block content%}
+
+<div class="search">
+    <img src="/static/images/google-logo.png"  class="google" alt="Google Logo">
+        
+    <form action="https://www.google.com/search" method="get">
+        <img class="search_icon" src="/static/images/search.png">
+        <a href=""><img class="right_icon1" src="/static/images/camera.png" alt=""></a>
+        <a href=""><img class="right_icon2" src="/static/images/mircophone.png" alt=""></a>
+       
+        <input type="text" name="q">
+        <div class="btn">
+            <button type="submit">Google Search</button>
+            <button type="button">I'm Feeling Lucky</button>
+        </div>
+    </form>
+    
+    <div class="note">
+        <aside>Google offered in: <a href="">العربية</a></aside>
+    </div>
+</div>
+
+{%endblock%}
