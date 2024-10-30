@@ -6,22 +6,30 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Body Styles */
-body {
+/* Ensure the body takes full height */
+html, body {
+    height: 100%;
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0 20px;
 }
 
-/* Container */
+/* Page Layout: Flexbox for the full page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Navbar at top, footer at bottom */
+}
+
+/* Container for main content */
 .container {
-    width: 100%;
+    flex: 1; /* Fills available space between navbar and footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     text-align: center;
     padding: 20px;
+    margin: 0 auto;
 }
 
 /* Top Navigation Bar */
@@ -30,8 +38,10 @@ body {
     justify-content: flex-end; /* Align everything to the right */
     align-items: center;
     width: 100%;
-    padding: 20px 0;
-    position: relative;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 /* Navigation Links and Icons */
@@ -45,6 +55,10 @@ body {
     color: #5f6368;
     text-decoration: none;
     font-size: 14px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
 }
 
 /* Material Icon Styling */
@@ -65,7 +79,7 @@ body {
     font-weight: bold;
 }
 
-/* Google Container */
+/* Main Content (Google Container) */
 .google-container {
     margin: 40px auto;
 }
@@ -128,6 +142,7 @@ body {
 .google-btn:hover {
     background-color: #f1f3f4;
 }
+
 /* Terms Container */
 .terms-container {
     max-width: 800px;
@@ -142,48 +157,17 @@ body {
     display: block;
 }
 
-/* Headings and Paragraphs */
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color:black;
-}
-
-h2 {
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-h3 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #3c4043;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-
 /* Footer Navigation */
 .footer-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 20px;
     background-color: #f8f9fa;
-    color: #5f6368;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 /* Align footer items horizontally */
