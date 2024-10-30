@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Google Search{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'myapp/styles/styles.css' %}">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-links">
+            <a href="{% url 'myapp:home' %}">Google</a>
+            <a href="">Images</a>
+        </div>
+        <div class="navbar-icons">
+            <a href="{% url 'myapp:home' %}">
+                <button type="submit" class="icon-button">
+                    <img src="{% static 'myapp/images/image.png' %}" />
+                </button>
+            </a>
+        </div>
+        <div class="navbar-signin">
+            <button class="signin-button">Sign In</button>
+        </div>
+    </div>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+
+

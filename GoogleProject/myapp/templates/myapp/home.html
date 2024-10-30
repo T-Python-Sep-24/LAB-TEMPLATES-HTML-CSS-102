@@ -1,0 +1,37 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Google Clone{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="logo">
+    <img src="{% static 'myapp/resources/google-logo.png' %}" alt="Google Logo">
+</div>
+<form action="https://www.google.com/search" method="get">
+    <input type="text" name="q" placeholder="Search...">
+    <div class="buttons">
+        <button type="submit">Google Search</button>
+        <button type="submit" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+    </div>
+</form>
+<div class="footer">
+    <div class="footer-row">
+        <span class="footer-text">Saudi Arabia</span>
+    </div>
+    <div class="footer-row2">
+        <span class="footer-links">
+            <a href="#">About</a> | 
+            <a href="#">Advertising</a> | 
+            <a href="#">How It Works</a>
+        </span>
+    </div>
+    <div class="footer-row2">
+        <span class="footer-links float-right">
+            <a href="#">Privacy</a> | 
+            <a href="{% url 'myapp:terms_of_service' %}">Terms of Service</a> | 
+            <a href="#">Settings</a>
+        </span>
+    </div>
+</div>
+
+{% endblock %}
