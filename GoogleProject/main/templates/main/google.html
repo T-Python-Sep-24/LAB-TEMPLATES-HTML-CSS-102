@@ -1,57 +1,38 @@
+{% extends 'main/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google</title>
+{% block title %}Google{% endblock %}
 
-    <link rel="stylesheet" href="/static/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+{% block content %}
+<div class="logo">
+    <img src="{% static 'images/google-logo.png' %}" alt="Google Logo" />
+</div>
 
-  </head>
-  <body>
-    <!-- Top Navigation Bar -->
-    <div class="top-nav">
-      <a href="#">Gmail</a>
-      <a href="#">Images</a>
-      <img class="grid-icon" src="{% static 'images/ix.png' %}" alt="Mneu"/>
-       <button class="sign-in">Sign In</button>
+<!-- Search Box -->
+ <div class="search-container">
+    <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search Google or type a URL">
+        <button class="icon-button icon-search">
+            <img src="{% static 'images/search.png' %}" alt="Search" />
+        </button>
+        <button class="icon-button icon-mic">
+            <img src="{% static 'images/mircophone.png' %}" alt="Microphone" />
+        </button>
+        <button class="icon-button icon-camera">
+            <img src="{% static 'images/camera.png' %}" alt="Camera" />
+        </button>
     </div>
+  </div>
 
-    <!-- Main Container -->
-    <div class="container">
-      <div class="logo">
-        <img src="{% static 'images/google-logo.png' %}" alt="Google Logo"/>
-      </div>
+<!-- Buttons -->
+<div class="buttons">
+    <button>Google Search</button>
+    <button>I'm Feeling Lucky</button>
+</div>
 
-      <!-- Search Box -->
-      <div class="search-container">
-        <div class="search-box">
-          <input type="text" class="search-input" placeholder="Search Google or type a URL"/>
-          <button class="icon-button icon-search">
-            <img src="{% static 'images/search.png' %}" alt="Search"/>
-          </button>
-          <button class="icon-button icon-mic">
-            <img src="{% static 'images/mircophone.png' %}" alt="Microphone"/>
-          </button>
-          <button class="icon-button icon-camera">
-            <img src="{% static 'images/camera.png' %}" alt="Camera"/>
-          </button>
-        </div>
-      </div>
+<!-- Language Offer -->
+<div class="language">
+    <p>Google offered in: <a href="#">العربية</a></p>
+</div>
 
-      <!-- Buttons -->
-      <div class="buttons">
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
-      </div>
-
-      <!-- Language Offer -->
-      <div class="language">
-        <p>Google offered in: <a href="#">العربية</a></p>
-      </div>
-    </div>
-  </body>
-</html>
+{% endblock %}
