@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
+    <link rel="stylesheet" href="{% static 'css/mainStyle.css' %}" />
+</head>
+<body>
+
+    <header>
+    <div class="wrapper">
+        <nav class="nav-bar">
+            <a href="https://mail.google.com/mail/">Gmail</a>
+            <a href="https://www.google.com/imghp">Images</a>
+            <a class="material-icon" href="https://www.google.com.sa/intl/ar/about/products"><span class="material-symbols-outlined">apps</span></a>
+            <button class="btn">Sign in</button>
+        </nav>
+    </div>
+</header>
+
+    {% block content %}
+    {% endblock %}
+    <footer>
+    <div class="location">
+        <h4>Saudi Arabia</h4>
+    </div>
+    <div class="bottom-nav-bar">
+        <div class="left-bottom-nav-bar">
+            <a href="https://about.google/">About</a>
+            <a href="https://www.google.com/intl/en_sa/ads/">Advertising</a>
+            <a href="https://www.google.com/services/">Business</a>
+            <a href="https://google.com/search/howsearchworks/">How Search works</a>
+        </div>
+        <div class="right-bottom-nav-bar">
+            <a href="https://policies.google.com/privacy">Privacy</a>
+            <a href="{% url 'cloneGoogleApp:terms_view' %}">Terms</a>
+            <a href="https://www.google.com/preferences">Settings</a>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
