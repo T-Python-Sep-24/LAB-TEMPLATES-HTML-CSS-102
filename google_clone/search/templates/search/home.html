@@ -1,0 +1,36 @@
+{% extends 'search/base.html' %}
+{% load static %}
+
+{% block title %}Google{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <div class="logo-container">
+        <img src="{% static 'images/google-logo.png' %}" alt="Google" class="logo">
+    </div>
+    
+    <div class="search-container">
+        <div class="search-box">
+            <span class="material-icons search-icon">search</span>
+            <input type="text" class="search-input">
+            <img src="{% static 'images/microphone-icon.png' %}" alt="Voice Search" class="mic-icon">
+        </div>
+        
+        <div class="search-buttons">
+            <button class="search-btn">Google Search</button>
+            <button class="lucky-btn">I'm Feeling Lucky</button>
+        </div>
+    </div>
+
+    <div class="languages">
+        Google offered in: 
+        <a href="#">Español</a>
+        <a href="#">Français</a>
+        <a href="#">中文</a>
+    </div>
+</div>
+{% endblock %}
