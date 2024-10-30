@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Google{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+     <div class="top-container">
+    <div class="top-nav">
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+      <img class="grid-icon" src="{% static 'images/ix.png' %}" alt="Menu" />
+      <button class="sign-in">Sign In</button>
+    </div>
+     </div>
+
+    <!-- Main Content Block -->
+    <div>{% block content %} {% endblock %}</div>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-top">
+        <div>Saudi Arabia</div>
+      </div>
+      <div class="footer-links">
+        <div class="links">
+          <a href="#">About</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#">How Search works</a>
+        </div>
+        <div class="links">
+          <a href="#">Privacy</a>
+          <a href="{% url 'main:term'%}">Terms</a>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

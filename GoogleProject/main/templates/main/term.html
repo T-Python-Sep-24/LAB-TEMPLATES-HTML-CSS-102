@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Google Terms of Service{% endblock %}
+
+{% block content %}
+<div class="content">
+    <!-- Header Image -->
+    <div class="header-image">
+        <img src="{% static 'images/term 2.png' %}" alt="Google Terms of Service Image"/>
+    </div>
+
+    <!-- Terms Text -->
+    <div class="terms-text">
+        <h1>Google Terms of Service</h1>
+        <p> Effective 5 January 2022 | <a href="https://policies.google.com/terms/archive">Archived versions</a> | 
+            <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.gstatic.com/policies/terms/pdf/20240522/ks8shls0/google_terms_of_service_en-GB.pdf">Download PDF</a>
+        </p>
+        <p><strong>Country version:</strong> Saudi Arabia</p>
+
+        <h2>What’s covered in these terms</h2>
+        <h3>
+          We know it's tempting to skip these Terms of Service, but it's
+          important to establish what you can expect from us as you use Google
+          services, and what we expect from you.
+        </h3>
+
+        <p>These Terms of Service reflect <a href="https://about.google/intl/en-GB_SA/how-our-business-works/">the way that our business works</a>, the laws that apply to our company, and 
+          <a href="https://about.google/philosophy/">certain things that we’ve always believed to be true</a>.
+        </p>
+
+        <div class="terms-details">
+            <ul>
+                <li><a href="#">What you can expect from us</a>, which describes how we provide and develop our services.</li>
+                <li><a href="#">What we expect from you</a>, which establishes certain rules for using our services.</li>
+                <li><a href="#">Content in Google services</a>, which describes the intellectual property rights to the content that you find in our services.</li>
+                <li><a href="#">In case of problems or disagreements</a>, which describes other legal rights that you have, and what to expect if someone violates these terms.</li>
+            </ul>
+        
+            <p>Understanding these terms is important because, by accessing or using our services, you're agreeing to these terms.</p>
+        
+            <p>Besides these terms, we also publish a <a href="https://policies.google.com/privacy">Privacy Policy</a>. Although it’s not part of these terms, we encourage you to read it to better understand how you can 
+                <a href="#">update</a>, <a href="#">manage</a>, <a href="#">export</a>, and <a href="#">delete your information</a>.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
