@@ -1,0 +1,51 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}Terms of Service{% endblock %}
+
+{% block content %}
+    <div class="terms-container">
+        <!-- Terms of Service Illustration -->
+        <img src="{% static 'images/tos_main_illustration.svg' %}" alt="Terms Illustration" class="terms-illustration">
+
+        <h1>Google Terms of Service</h1>
+        <p class="effective-date">Effective 5 January 2022 | 
+            <a href="#">Archived versions</a> | <a href="#">Download PDF</a>
+        </p>
+
+        <h2>What’s covered in these terms</h2>
+        <p>
+            We know it’s tempting to skip these Terms of Service, but it’s important to establish what you can expect from us as you use our services, and what we expect from you.
+        </p>
+
+        <p>
+            These Terms of Service reflect <a href="#">the way that Google’s business works</a>, the laws that apply to our company, and <a href="#">certain things that we’ve always believed to be true</a>. As a result, these Terms of Service help define Google’s relationship with you as you interact with our services.
+        </p>
+
+        <h3>Summary of Key Points:</h3>
+        <ul>
+            <li><a href="#">What you can expect from us</a></li>
+            <li><a href="#">What we expect from you</a></li>
+            <li><a href="#">Content in Google services</a></li>
+            <li><a href="#">In case of problems or disagreements</a></li>
+        </ul>
+
+        <p>
+            Understanding these terms is important because, by using our services, you’re agreeing to these terms. Besides these terms, we also publish a <a href="#">Privacy Policy</a>. Although it’s not part of these terms, we encourage you to read it to better understand how you can <a href="#">update, manage, export, and delete your information</a>.
+        </p>
+
+        <h2>Service Provider</h2>
+        <p>Google services are provided by, and you’re contracting with:</p>
+        <p>
+            Google LLC<br>
+            1600 Amphitheatre Parkway<br>
+            Mountain View, California 94043<br>
+            USA
+        </p>
+
+        <h2>Age Requirements</h2>
+        <p>
+            If you’re under the <a href="#">age required to manage your own Google Account</a>, you must have your parent or legal guardian’s permission to use a Google Account. Please ask your parent or legal guardian to read these terms with you.
+        </p>
+    </div>
+{% endblock %}
