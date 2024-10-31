@@ -168,3 +168,49 @@ language-offer {
 .left-links, .right-links {
     display: flex;
 }
+.edit-page-S{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.google-service{
+    width: 50vw;
+    /* height: 270;  */
+}   
+.edit-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #3c4043;
+    line-height: 1.6;
+}
+
+.edit-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #202124;
+}
+
+.edit-text p {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.edit-text ul {
+    margin: 10px 0 10px 20px;
+}
+
+.edit-text a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.edit-text a:hover {
+    text-decoration: underline;
+}
