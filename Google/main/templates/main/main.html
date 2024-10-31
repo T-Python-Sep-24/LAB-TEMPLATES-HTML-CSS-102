@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Google Home{% endblock %}
+
+{% block content %}
+<div class="google-homepage">
+    <img src="{% static 'images/google-logo.png' %}" alt="Google Logo">
+    <form action="https://www.google.com/search" method="GET">
+        <div class="search">
+            <span class="search-icon">
+                <img src="{% static 'images/search.png' %}" alt="Search" />
+            </span>
+            <input type="text" name="query" placeholder="Search Google">
+            <span class="mic-icon">
+                <img src="{% static 'images/mircophone.png' %}" alt="Voice Search" />
+            </span>
+            <span class="photo-icon">
+                <img src="{% static 'images/camera.png' %}" alt="Photo" />
+            </span>
+        </div>
+        <div class="button-container">
+            <button class="btn" type="submit">Google Search</button>
+            <button class="btn" type="submit">I'm Feeling Lucky</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
