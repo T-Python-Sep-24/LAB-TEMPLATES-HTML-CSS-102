@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="">Gmail</a>
+        <a href="">Images</a>
+        <a class="apps-icon" href="">
+            <span class="material-symbols-outlined">
+                apps
+            </span>
+        </a>
+        <a href="">
+            <button class="sign-btn">Sign in</button>
+        </a>
+    </nav>
+
+        {% block content %}
+
+        {% endblock %}
+    
+    <div class="bottom">
+        <div class="before-bottom-section">
+            Saudi Arabia
+        </div>
+        <hr style="border-color: rgba(174, 173, 173, 0.274);">
+        <div class="bottom-section">
+            <div class="bottom-section-div">
+                <a href="">About</a>
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search works</a>
+            </div>
+            <div class="bottom-section-div">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            <div>
+        </div>
+    </div>
+</body>
+</html>
