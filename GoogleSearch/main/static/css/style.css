@@ -11,7 +11,11 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
+    min-height: 100vh;
 }
 
 /* put in wrapper to use flex to keep footer at the bottom */
@@ -19,13 +23,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vw;
     height: auto;
-}
-
-.container {
     margin: 0 1rem;
 }
+
 
 /*
  *
@@ -35,6 +36,9 @@ body {
  *
  */
 
+header {
+    margin: 0 1rem;
+}
 nav {
     display: flex;
     justify-content: flex-end;
@@ -71,9 +75,10 @@ a {
  */
 
 
- /* index page */
+ /* 
+  * index page 
+  */
  .g-container {
-    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,57 +88,56 @@ a {
 
  .g-img {
     display: block;
-    padding-top: 5rem;
+    width: 25vw;
+ }
+
+ .g-img img {
+    width: 100%;
  }
 
  .search {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
     width: 45vw;
     height: 3rem;
-    justify-content: space-between;
-    /* padding-left: 1rem; */
-    padding-right: 1rem;
-    /* flex-direction: row; */
-    /* width: 40vw; */
-    border: 1px rgba(120, 120, 120, 1) solid;
+    padding: 0 1rem;
     border-radius: 12px;
+    border: 1px rgba(120, 120, 120, 1) solid;
+ }
+
+ .search-first-child {
+    display: flex;
+ }
+
+ .search-second-child {
+    display: flex;
  }
 
  input {
-    height: 2rem;
     width: 30rem;
-    padding-left: 2.5rem;
+    height: 25px;
+    padding-left: 1rem;
     border: none;
+    font-size: 1.5rem;
  }
  input:focus {
     outline: none;
-    border: none;
  }
 
  .search-icon {
-    position: absolute;
     width: 25px;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-    /* z-index: 3; */
-    /* border-radius: 5px; */
-    /* padding-left: 10px; */
  }
 
  .microphone-icon {
-    position: relative;
     width: 25px;
     align-items: flex-start;
-    padding-top: 0.5rem;
-
-    /* margin-right: 2rem; */
  }
  .camera-icon {
-    position: relative;
     width: 25px;
     align-items: flex-end;
-    /* margin-right: 2rem; */
-    /* display: inline-block; */
  }
 
  .search-btn {
@@ -146,7 +150,9 @@ a {
     margin: 0 0.5rem;
 }
 
-/* terms page */
+/*
+ * terms page
+ */
 .t-wrapper {
     margin: 0 20rem;
 }

@@ -6,23 +6,23 @@
 
 {% block content %}
 
-<div class="g-container">
+<form class="g-container" action="https://www.google.com/search" method="get" target="_blank">
     <div class="g-img"><img src="{% static 'images/google-logo.png' %}" alt="Google logo"></div>
     <div class="search">
-        <div>
+        <div class="search-first-child">
             <img class="search-icon" src="{% static 'images/search2.svg' %}" alt="search icon">
             <input type="text" name="q" id="search"/>
         </div>
-        <div>
+        <div class="search-second-child">
             <img class="microphone-icon" src="{% static 'images/mircophone.png' %}" alt="microphone icon">
             <img class="camera-icon" src="{% static 'images/camera.png' %}" alt="camera icon">
         </div>
     </div>
-    <form class="cta" action="https://www.google.com/search" method="get" target="_blank">
+    <div class="cta">
         <button type="submit" class="search-btn">Google Search</button>
         <button class="search-btn">I'm Feeling Lucky</button>
-    </form>
-    <p>Google offered in: <span>العربية</span></p>
-</div>
+    </div>
+    <p>Google offered in: <a href="">العربية</a></p>
+</form>
 
 {% endblock %}
