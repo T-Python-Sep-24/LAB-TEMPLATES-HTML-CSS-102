@@ -1,0 +1,167 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.nav-bar a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #202124;
+    font-size: 14px;
+}
+
+.app-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('path_to_icon_image'); 
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.nav-bar button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 272px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+}
+
+.search-bar button {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.language {
+    margin-top: 20px;
+}
+
+.language a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.footer a {
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.footer .left-links, .footer .right-links {
+    display: flex;
+    gap: 10px;
+}
+
+/* تنسيقات صفحة الشروط */
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.terms-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.terms-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.terms-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #202124;
+}
+
+.terms-container p {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.terms-container h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #202124;
+}
+
+.terms-container a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+

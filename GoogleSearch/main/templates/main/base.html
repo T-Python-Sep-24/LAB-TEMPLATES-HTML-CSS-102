@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Google{% endblock %}</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+</head>
+<body>
+    <div class="wrapper">
+        {% block navbar %}
+        <header class="header">
+            <div class="nav-bar">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <div class="app-icon"></div>
+                <button>Sign in</button>
+            </div>
+        </header>
+        {% endblock %}
+        
+        {% block content %}
+        <main>
+          
+        </main>
+        {% endblock %}
+        
+        <footer class="footer">
+            <div class="left-links">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="right-links">
+                <a href="#">Privacy</a>
+                <a href="{ url 'main:service_page'}">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
