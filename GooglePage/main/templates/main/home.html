@@ -1,0 +1,40 @@
+{%  extends 'main/control.html'%}
+{% block content %}
+{%load static%}
+<section class="edit-center">
+    <img src="{% static 'images/google-logo.png' %}" alt="Google Logo" class="google-image">
+    <div class="search-container">
+        <img src="{% static 'icons/search_.png' %}" alt="Search Icon" class="icon-search">
+        <input type="text" id="edit-input" placeholder="Search Google or type a URL">
+        <div class="edit-images">
+            <img src="{% static 'icons/mircophone.png' %}" alt="Microphone Icon" class="icon-microphone">
+            <img src="{% static 'icons/camera.png' %}" alt="Camera Icon" class="icon-camera">       
+        </div>       
+    </div> 
+    <div class="button-container">
+        <button class="btnser">Google Search</button>
+        <button class="btnfee"> <a href="{% url 'main:service_view' %}">I'm Feeling Lucky</a></button>
+    </div>
+    <div class="language-offer">
+        Google offered in: <a href="#">العربية</a>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-top">
+        <span>Saudi Arabia</span>
+    </div>
+    <div class="footer-links">
+        <div class="left-links">
+            <a href="#">About</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How Search works</a>
+        </div>
+        <div class="right-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
+</footer>
+{% endblock %}
