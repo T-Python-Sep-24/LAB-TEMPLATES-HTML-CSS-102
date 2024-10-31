@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{% endblock %}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <nav>
+                    <a href="#">Gmail</a>
+                    <a href="">Images</a>
+                    <a href=""><span class="material-symbols-outlined g-icon">apps</span></a>
+                    <button class="sign-btn">Sign in</button>
+                </nav>
+            </header>
+            <main>
+                {% block content %}
+    
+                {% endblock %}
+            </main>
+        </div> <!-- End of container -->
+        <footer>
+            <div class="footer">
+                <div class="country">Saudi Arabia</div>
+            </div>
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-links">
+                        <a href="" class="footer-link">About</a><a href="" class="footer-link">Advertising</a><a href="" class="footer-link">Business</a><a href="" class="footer-link">How Search works</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="" class="footer-link">Privacy</a><a href="" class="footer-link">terms</a><a href="" class="footer-link">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- End of wrapper -->
+</body>
+</html>
