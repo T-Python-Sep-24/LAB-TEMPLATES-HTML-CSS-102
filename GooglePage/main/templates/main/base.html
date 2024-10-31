@@ -1,0 +1,43 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/home_page.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />  
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+            <span class="material-symbols-outlined">apps</span>
+            <button class="btn">Sign In</button>
+        </nav>
+    </header>
+    {% block content %}
+    
+    {% endblock %}
+    <footer>
+        <div class="footer-section-1">
+            Saudi Arabia
+        </div>
+        <div class="footer-section-2">
+            <div>
+                <a href="">About</a>
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search Works</a>
+            </div>
+            <div>
+                <a href="">Privacy</a>
+                <a href="{%url 'main:terms_view'%}">Terms</a>
+                <a href="">Settings</a>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
