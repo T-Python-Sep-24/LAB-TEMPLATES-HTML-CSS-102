@@ -1,0 +1,48 @@
+{% extends 'google/base.html' %}
+
+{% block title %} Google Page {% endblock %}
+
+{% block content %}
+
+{% load static %}
+<div class="page">
+<div class="mid-section">
+    <div class="img-section">
+        <img src="{% static 'images/Google_logo.webp' %}">
+    </div>
+
+    <div class="search-bar">
+        <span class="material-symbols-outlined">
+            search
+        </span>
+        <input type="text">
+        <div class="mic-cam">
+            <a class="mic" href="">
+                <img src="{% static 'images/Google_mic.png' %}">
+            </a>
+            <a class="cam" href="">
+                <img src="{% static 'images/Google_Len.png' %}">
+            </a>
+        </div>
+    </div>
+
+    <div class="bottom-btns">
+        <a href="">
+            <button>Google Search</button>
+        </a>
+        <a href="">
+            <button>I'm Feeling Lucky</button>
+        </a>
+    </div>
+    
+    <div class="bottom-btns">
+        Google offered in:
+        <a href="" style="text-decoration: none;">
+            العربية
+        </a>
+    </div>
+</div>
+
+</div>
+
+{% endblock %}
