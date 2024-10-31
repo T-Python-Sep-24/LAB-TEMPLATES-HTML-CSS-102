@@ -1,0 +1,19 @@
+{% extends "main/base.html" %}
+{% block title %}Google Search - Home{% endblock %}
+
+    {% block content %}
+    <div class="google-search-container">
+        <img src="static/Images/google-logo.png" alt="Google Logo" class="google-logo">
+        <div class="google-search-bar">
+            
+            <input type="text" class="google-search-input" placeholder="Search Google or type a URL">
+
+        </div>
+        <div class="google-button-group">
+            <button class="google-search-button">Google Search</button>
+            <button class="google-feeling-lucky-button">I’m Feeling Lucky</button>
+        </div>
+        <p class="google-language-option">Google offered in: <a href="#" class="google-language-link">العربية</a></p>
+    </div>
+    {% endblock %}
+
