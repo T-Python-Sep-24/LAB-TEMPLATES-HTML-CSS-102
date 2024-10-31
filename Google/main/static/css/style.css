@@ -7,15 +7,30 @@
 
 
 
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 100vh; /* Ensures body fills the viewport height */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text from the left */
     justify-content: center;
-    
+    text-align: left;
+    width: 100%;
+    max-width: 800px; /* Optional: limits content width */
+    margin: 0 auto; /* Centers the main content */
+    padding: 20px;
+    flex-grow: 1; /* Pushes footer to the bottom */
 }
 
 .google-header {
@@ -23,7 +38,6 @@ body {
     justify-content: flex-end;
     width: 100%;
     padding: 10px 20px;
-    box-sizing: border-box;
     align-items: center;
 }
 
@@ -36,19 +50,9 @@ body {
 
 .gb_E {
     color: #5f6368;
-    text-decoration: none;
     margin-right: 10px;
     width: 2rem;
     height: 2rem;
-}
-
-.top-nav .icon {
-    margin-right: 15px;
-    font-size: 18px;
-}
-
-.top-nav {
-    align-items: center;
 }
 
 .sign-in-btn {
@@ -63,23 +67,30 @@ body {
 .google-footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-color: #f2f2f2;
     padding: 10px 0;
     width: 100%;
+    position: sticky;
+    bottom: 0;
 }
 
 .footer-top {
     font-size: 12px;
     color: #70757a;
     padding: 5px 0;
+    align-self: flex-start;
+    padding-left: 10px;
 }
 
 .footer-links {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 100%;
     font-size: 12px;
+    margin: 0 auto;
+    padding-left: 10px;
 }
 
 .footer-links div {
@@ -91,6 +102,7 @@ body {
     text-decoration: none;
     margin-right: 15px;
 }
+
 input {
     border: none;
     outline: none; 
@@ -152,16 +164,6 @@ input[type="text"]::placeholder {
     background-color: #357ae8;   
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 .header-image {
     width: 80rem;
