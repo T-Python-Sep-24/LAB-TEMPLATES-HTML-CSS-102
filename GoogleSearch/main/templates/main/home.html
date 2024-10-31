@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{%load static%}
+{% block content %}
+<div class="main-content">
+    <div class="logo">
+        <img src="static/Images/google-logo.png">
+    </div>
+    <form class="search-bar" action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" placeholder="Search Google or type a URL">
+        <button type="submit">Google Search</button>
+        <button type="button" onclick="location.href='https://www.google.com/doodles';">I'm Feeling Lucky</button>
+    </form>
+    <div class="language">
+        Google offered in: <a href="#">العربية</a>
+    </div>
+</div>
+{% endblock %}
