@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Google Search Webpage Design{% endblock %}
+
+{% block content %}
+    <img src="{% static 'images/google-logo.png' %}" class="google-logo">
+    <div class="search">
+            <span class="fas fa-search"></span>
+            <input type="text" name="q" placeholder="Search...." required>
+            <div class="search-icons">
+                <div class="icon-container">
+                    <img src="{% static 'images/mircophone.png' %}">
+                    <div class="tooltip">Search by Voice</div>
+                </div>
+                <div class="icon-container">
+                    <img src="{% static 'images/camera.png' %}">
+                    <div class="tooltip">Search by Image</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="search-button">
+            <button type="button">Google Search</button>
+            <button type="button">I'm Feeling Lucky</button>
+    </div>
+    <div class="search-language">
+        <p>Google offered in: </p>
+        <a href="#">العربية</a>
+    </div>
+
+{% endblock %}

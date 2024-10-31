@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <title>{% block title %}Google Search{% endblock %}</title>
+</head>
+<body>
+    {% block header %}
+    <nav class="navbar">
+        <div class="navbar-wrapper">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <div class="app">
+                <span class="material-icons">apps</span> 
+            </div>
+            <div class="account">
+                <button class="sign-in-button">Sign In</button>
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% block footer %}
+    <footer>
+        <div class="footer-location">
+            Saudi Arabia
+        </div>
+        <div class="footer-menu">
+            <div class="left-menu">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </div>
+            <div class="right-menu">
+                <a href="#">Privacy</a>
+                <a href="{% url 'term_view' %}">Terms</a>
+                <a href="#">Settings</a>
+                <a href="{% url 'home_view' %}">Home</a> <!--I added this button to return to the home page -->
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+</body>
+</html>
