@@ -2,14 +2,16 @@
 {%load static%}
 {%block title%}Google{%endblock%}
 {% block content %}
+<form action="https://www.google.com/search" method="GET">
 <div class="content">
     <img src="{%static 'images/google-logo.png'%}"/>
+
     <div class="search-bar">
         <aside>
             <button type="submit"><span class="material-symbols-outlined">search</span></button>
         </aside>
         <aside>
-            <input/>
+            <input type="text" id="search" name="q"/>
         </aside>
         <aside>
             <a href=""><img src="{%static 'images/mircophone.png'%}"/></a>
@@ -24,5 +26,6 @@
         <p>Google offered in: <a href="">العربية</a></p>
     </div>    
 </div><!--end content-->
+</form> 
 
 {% endblock %}
