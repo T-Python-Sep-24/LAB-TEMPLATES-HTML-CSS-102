@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+    <title>Google</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+        }
+        header {
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header a {
+            color: #4285f4;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        img {
+            width: 272px; /* Adjust this value to fit your design */
+            height: auto;
+            margin-top: 80px; /* Space for the fixed header */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="text"] {
+            width: 600px;
+            height: 50px;
+            padding: 10px;
+            font-size: 24px;
+            border: 1px solid #dcdcdc;
+            border-radius: 25px;
+            outline: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #f8f9fa;
+            color: #5f6368;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e8e8e8;
+        }
+        .material-icons {
+            margin-right: 5px;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #70757a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/">Home</a>
+            <a href="https://accounts.google.com/signin" target="_blank">Sign in</a>
+        </div>
+    </header>
+
+    <img src="{% static 'main/images/google-logo.png' %}" alt="Google Logo">  <!-- Update this line -->
+
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" placeholder="Search Google or type a URL..." required>
+        <button type="submit">
+            <span class="material-icons">search</span>
+            Google Search
+        </button>
+        <button type="button">
+            <span class="material-icons">mic</span>
+            Voice Search
+        </button>
+    </form>
+
+    <footer>
+        <p><a href="{% url 'terms' %}">Terms of Service</a></p>
+    </footer>
+</body>
+
+</html>

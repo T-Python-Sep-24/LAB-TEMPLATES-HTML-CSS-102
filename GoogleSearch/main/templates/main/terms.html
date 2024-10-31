@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+    <title>Terms of Service</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Changed to flex-start for normal flow */
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+            padding-top: 100px; /* Space for the fixed header */
+        }
+        header {
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header a {
+            color: #4285f4;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        img {
+            max-width: 100%; /* Make sure the image is responsive */
+            height: auto;
+            margin-top: 20px; /* Space above the image */
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #70757a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/">Home</a>
+            <a href="https://accounts.google.com/signin" target="_blank">Sign in</a>
+        </div>
+    </header>
+
+    <img src="{% static 'main/images/tos_main_illustration.svg' %}" alt="Terms of Service Illustration"> <!-- Update this line -->
+
+    <h1>Google Terms of Service</h1>
+    <p><strong>Effective 5 January 2022</strong> | <a href="https://www.google.com/terms/archive?hl=en-SA&fg=1">Archived versions</a> | <a href="https://www.gstatic.com/policies/terms/pdf/20220105/it7r24p9/google_terms_of_service_en-GB.pdf">Download PDF</a></p>
+    <p><strong>Country version:</strong> Saudi Arabia</p>
+
+    <h2>What’s covered in these terms</h2>
+    <p>We know it’s tempting to skip these Terms of Service, but it’s important to establish what you can expect from us as you use Google services, and what we expect from you.</p>
+    <p>These Terms of Service reflect <a href="https://about.google/intl/en-GB_SA/how-our-business-works">the way that Google’s business works</a>, the laws that apply to our company, and <a href="https://www.google.com/about/philosophy.html?hl=en_GB">certain things that we’ve always believed to be true</a>. As a result, these Terms of Service help define Google’s relationship with you as you interact with our services. For example, these terms include the following topic headings:</p>
+    <ul>
+        <li><a href="https://www.google.com/terms?hl=en-SA&fg=1#toc-what-you-expect">What you can expect from us</a></li>
+        <li><a href="https://www.google.com/terms?hl=en-SA&fg=1#toc-what-we-expect">What we expect from you</a></li>
+        <li><a href="https://www.google.com/terms?hl=en-SA&fg=1#toc-content">Content in Google services</a></li>
+        <li><a href="https://www.google.com/terms?hl=en-SA&fg=1#toc-problems">In case of problems or disagreements</a></li>
+    </ul>
+    <p>Understanding these terms is important because, by using our services, you’re agreeing to these terms. Besides these terms, we also publish a <a href="https://www.google.com/privacy?hl=en-SA&fg=1">Privacy Policy</a>.</p>
+
+    <h2>Terms</h2>
+
+    <h3>Service provider</h3>
+    <p>Google services are provided by, and you’re contracting with:<br>
+    Google LLC<br>
+    1600 Amphitheatre Parkway<br>
+    Mountain View, California 94043<br>
+    USA</p>
+
+    <h3>Age requirements</h3>
+    <p>If you’re under the <a href="https://support.google.com/accounts/answer/1350409?hl=en_GB">age required to manage your own Google Account</a>, you must have your parent or legal guardian’s permission to use a Google Account. Please ask your parent or legal guardian to read these terms with you.</p>
+
+    <footer>
+        <p><a href="{% url 'terms' %}">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
