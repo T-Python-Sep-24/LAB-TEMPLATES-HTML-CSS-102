@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f9fa; /* Light background color */
+    color: #343a40; /* Darker text color for readability */
+}
+
+h1, h2, h3 {
+    color: #212529; /* Dark text for headings */
+}
+
+h1 {
+    font-size: 2.5em; /* Size for main headings */
+}
+
+h2 {
+    font-size: 2em; /* Size for subheadings */
+}
+
+h3 {
+    font-size: 1.5em; /* Size for smaller subheadings */
+}
+
+form {
+    margin-top: 20px; /* Spacing above the form */
+}
+
+input[type="text"] {
+    padding: 10px; /* Inner padding for the text input */
+    width: 300px; /* Width of the input field */
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Slightly rounded corners */
+    outline: none; /* Remove outline on focus */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+input[type="text"]:focus {
+    border-color: #4285f4; /* Change border color on focus */
+}
+
+button {
+    padding: 10px 20px; /* Inner padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #4285f4; /* Google blue */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+}
+
+a {
+    color: #4285f4; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
