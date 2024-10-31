@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica, Arial, sans-serif;}
+    body {
+    background: #FFFFFF;
+    margin: 0;
+}
+
+header{
+
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    margin: 20px 25px;
+
+}
+
+h5{
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.sign{
+    color: #fff;
+    background: #0b57d0;
+    text-decoration: none;
+    padding: 9px 23px;;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:  100px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin: 20px 0px;
+    padding: 5px;
+    border-radius: 25px;
+
+    height: 40px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    margin: 20px 0px;
+
+    width: 403px;
+    height: 40px;
+    border-radius: 24px;
+
+}
+
+.search-icon, .mic-icon {
+    width: 24px;
+    height: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px 20px 10px ;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer{
+
+    text-align: center;
+    padding: 1em;
+    background-color: #c2c2c7;
+    color: #e0e3e6;
+
+
+   
+}
+
